@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Javascript </title>
+        <link rel="stylesheet" type="text/css" href="Assignment.css">
+        <script src = "Assignment.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+       <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>-->
+    </head>
+    <body>
+        <div class="cards">
+            <div class="card">
+                <img src="C:\Users\Nitisha\Desktop\UI_Learn\WebPage\Images\BeerBottles.jpg" alt="Beer Bottles" id="image">
+                <button class="btn" onclick="BeerBottle();sum();"><img src="C:\Users\Nitisha\Desktop\UI_Learn\WebPage\Images\button.jpg" style="border-radius: 50%; height: 50px;
+                    width: 80%;"></button>
+                <div id="content">
+                    <h3>Beer Bottle</h3>
+                    <p>$25</p>
+                </div>
+            </div>
+            <div class="card">
+                 <img src="C:\Users\Nitisha\Desktop\UI_Learn\WebPage\Images\EcoBags.jpg" alt="ECO Bags" id="image">
+                 <button class="btn" onclick="ECOBags();sum();"><img src="C:\Users\Nitisha\Desktop\UI_Learn\WebPage\Images\button.jpg" style="border-radius: 50%; height: 50px;
+                    width: 80%;"></button>
+                 <div id="content">
+                    <h3>ECO Bags</h3>
+                    <p>$73</p>
+                </div>
+            </div>
+            <div class="card">
+                 <img src="C:\Users\Nitisha\Desktop\UI_Learn\WebPage\Images\PaperBags.jpg" alt="Paper Bags" id="image">
+                 <button class="btn" onclick="PaperBags();sum();"><img src="C:\Users\Nitisha\Desktop\UI_Learn\WebPage\Images\button.jpg" style="border-radius: 50%; height: 50px;
+                    width: 80%;"></button>
+                 <div id="content">
+                     <h3>Paper Bags</h3>
+                     <p>$35</p>
+                </div>
+            </div>
+        </div>
+        <div class="row" id="bill">
+           <h4 class="col-lg-4"><b>Shopping Cart</b></h4>
+           <p class="col-lg-2">Price</p>
+           <p class="col-lg-5">Quantity</p>
+           <p class="col-lg-1">Total</p>
+        </div>
+        <p id="BEERBOTTLES"></p>
+        <p id="ECOBAGS"></p>
+        <p id="PAPERBAGS" ></p>
+        <p id="total" style="float:right;"></p>
+    </body>
+</html>
