@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<Head>
+        
+        <title>Data Grid.Column Chooser.Essential JS 2 for Javascript(ES5)Syncfusion </title>
+        <link rel="stylesheet" type="text/css" href="Grid.Css">
+        <script src = "Grid.js"></script>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <link href="//netdna.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</Head>
+
+<Body>
+
+    <div class="container-fluid" >
+            <nav class="row" style="margin: .1em; border-bottom-style: outset;">
+                <img id="logo" class="header-logo" src="C:\Users\Nitisha\Desktop\UI_Learn\GridsUIAssignment\Images\Logo.png" alt="Company logo">
+                <p id="heading" class="col-7"><b>Essential JS 2 for Javascript</b></p>
+                <div >
+                     <a  id="Nav" href="https://www.syncfusion.com/javascript-ui-controls/js-data-grid">PRODUCT DETAILS</a>
+                     <button id="Nav" type="button" class="btn btn-primary">Download Now</button>
+                </div>
+            </nav>
+            <div class="row " >
+                    <a href="#" id="Control">All Controls</a>
+                    <p id="Control">/</p>
+                    <a href="#" id="Control">Data Grid</a>
+                    <p id="Control">/</p>
+                    <a href="#" id="Control" class="col-9">Column Chooser</a>
+                    <a class="glyphicon glyphicon-menu-left btn btn-default btn-sm " id="Control" ></a>
+                    <a class="glyphicon glyphicon-menu-right btn btn-default btn-sm"  id="Control"></a>
+                    
+            </div>
+            <div>
+                <p>This sample demonstrates the Grid column chooser feature. Click the column chooser icon in the toolbar to open column chooser and you can select columns to hide/show from the checkbox list.
+                <a href="#">More Details</a> </p>
+            </div>
+            <div>
+                     <div class="dropdown container-fluid" >
+                            <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown" id="styl">Columns</button>
+                            <div class="dropdown-menu"id="DrpBox">
+                                    <h4>Choose Column</h4>
+
+                                    <div class="row">
+                                          <input type="text" placeholder="Search" id="myInput" oninput="filterFunction()">
+                                          <div class="glyphicon glyphicon-search"></div></div>
+
+                                    <div class="checkbox checkbox-danger">
+                                            <a href="#"><input type="checkbox" value="show" class="anchors">Order Date</a></div>
+
+                                    <div class="checkbox">
+                                            <a href="#"><input type="checkbox" value="show" class="anchors">Freight</a></div>
+
+                                    <div class="checkbox">
+                                           <a href="#"><input type="checkbox" value="show" class="anchors">Shipped Date</a></div>
+
+                                    <div class="checkbox">
+                                            <a href="#"><input type="checkbox" value="show" class="anchors">Ship Country</a></div>
+
+                                    <div class="checkbox">
+                                          <a href="#"><input type="checkbox" value="show" class="anchors">Ship City</a></div>
+                            <div style="border-top-color: grey;float:right;">    
+                                    <button class="btn" style="color:red;" onclick="display()">OK</button>
+                                    <button class="btn">CANCEL</button>
+                            </div>
+                        </div>
+                    </div>
+                    <table class="table table-hover" id="table1">
+                    <div id="tble">    
+                    <tr>
+                        <th>Order Id</th>
+                        <th>Customer Name</th>
+                        <div id="heading" >
+                        <th id="1"class="OrderDate">Order Date</th>
+                        <th id="2"class="Freight">Freight</th>
+                        <th id="3"class="ShippedDate">Shipped Date</th>
+                        <th id="4" class="ShipCountry">Ship Country</th>
+                        <th id="5" class="ShipCity">Ship City</th>
+                        </div>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Maria</td>
+                        <td class="OrderDate">7/9/1996</td>
+                        <td class="Freight">$32.38</td>
+                        <td class="ShippedDate">7/16/1996</td>
+                        <td class="ShipCountry">France</td>
+                        <td class="ShipCity">Reims</td>
+                    </tr>
+
+                    <tr>
+                            <td>2</td>
+                            <td>Maria</td>
+                            <td class="OrderDate">7/9/1996</td>
+                            <td class="Freight">$32.38</td>
+                            <td class="ShippedDate">7/16/1996</td>
+                            <td class="ShipCountry">France</td>
+                            <td class="ShipCity">Reims</td>
+                    </tr>
+
+                    <tr>
+                            <td>3</td>
+                            <td>Maria</td>
+                            <td class="OrderDate">7/9/1996</td>
+                            <td class="Freight">$32.38</td>
+                            <td class="ShippedDate">7/16/1996</td>
+                            <td class="ShipCountry">France</td>
+                            <td class="ShipCity">Reims</td>
+                    </tr>
+
+                    <tr>
+                            <td>4</td>
+                            <td>Maria</td>
+                            <td class="OrderDate">7/9/1996</td>
+                            <td class="Freight">$32.38</td>
+                            <td class="ShippedDate">7/16/1996</td>
+                            <td class="ShipCountry">France</td>
+                            <td class="ShipCity">Reims</td>
+                    </tr>
+
+                    <tr>
+                            <td>5</td>
+                            <td>Maria</td>
+                            <td class="OrderDate">7/9/1996</td>
+                            <td class="Freight">$32.38</td>
+                            <td class="ShippedDate">7/16/1996</td>
+                            <td class="ShipCountry">France</td>
+                            <td class="ShipCity">Reims</td>
+                    </tr>
+
+                    <tr>
+                            <td>6</td>
+                            <td>Maria</td>
+                            <td class="OrderDate">7/9/1996</td>
+                            <td class="Freight">$32.38</td>
+                            <td class="ShippedDate">7/16/1996</td>
+                            <td class="ShipCountry">France</td>
+                            <td class="ShipCity">Reims</td>
+                    </tr>
+
+                    <tr>
+                            <td>7</td>
+                            <td>Maria</td>
+                            <td class="OrderDate">7/9/1996</td>
+                            <td class="Freight">$32.38</td>
+                            <td class="ShippedDate">7/16/1996</td>
+                            <td class="ShipCountry">France</td>
+                            <td class="ShipCity">Reims</td>
+                    </tr>
+
+                    <tr>
+                            <td>8</td>
+                            <td>Maria</td>
+                            <td class="OrderDate">7/9/1996</td>
+                            <td class="Freight">$32.38</td>
+                            <td class="ShippedDate">7/16/1996</td>
+                            <td class="ShipCountry">France</td>
+                            <td class="ShipCity">Reims</td>
+                    </tr>
+
+                    <tr>
+                            <td>9</td>
+                            <td>Maria</td>
+                            <td class="OrderDate">7/9/1996</td>
+                            <td class="Freight">$32.38</td>
+                            <td class="ShippedDate">7/16/1996</td>
+                            <td class="ShipCountry">France</td>
+                            <td class="ShipCity">Reims</td>
+                    </tr>
+                </div>
+                </table>
+                <div class="row">
+                    <p class="col-1 glyphicon glyphicon-menu-left glyphicon glyphicon-triangle-left"></p>
+                    <p class="col-1 	glyphicon glyphicon-chevron-left"></p>
+                    <p class="col-1">1</p>
+                    <p class="col-1">2</p>
+                    <p class="col-1 	glyphicon glyphicon-chevron-right"></p>
+                    <p class="col-5 glyphicon glyphicon-menu-right glyphicon glyphicon-triangle-right"></p>
+                    <p>1 of 2 pages (9 items)</p>
+
+                </div>
+
+            </div>
+            <div>
+                <p><b>Description</b></p>
+                <p>The Grid columns can be shown/hidden dynamically by using column chooser. To enable column chooser behavior, set showColumnChooser property as true.
+                 You can also prevent the display of a column by setting columns->
+                    showInColumnChooser as false in columns definition.
+                     In this demo, when the user clicks column chooser icon from the toolbar
+                     then the column chooser menu will open. User can show or hide the columns
+                     by changing the state of the checkbox. Injecting Module Grid features are 
+                    segregated into individual feature-wise modules. To use column
+                    chooser feature, we need to inject ColumnChooser module using 
+                    the Grid.Inject(ColumnChooser) section.</p>
+            </div>
+    </div>
+ 
+
+
+</Body>
+</html>

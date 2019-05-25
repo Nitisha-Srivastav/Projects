@@ -1,0 +1,55 @@
+#logo{
+    width: 6em;
+    height: 4em;
+   margin-left: 1em;
+   margin-right: 1em;
+   padding-right: 1em;
+   border-right-style: solid;
+}
+
+#heading{
+    width: 4em;
+    height: 4em;
+   margin-left: 0.5em;
+   margin-right: 1em;
+   padding-right: 1em;
+   padding-top: 1.5em;
+}
+
+#Nav{
+ 
+    width: 9em;
+    height: 3em;
+   margin-left: 1em;
+
+}
+
+#Control{
+  
+ 
+   margin:0.5em;
+   
+}
+#styl{
+   float:right;
+   background-color: lightgrey;
+   color:black;
+}
+
+.dropdown{
+    background-color: #edeff2;
+    border-style: groove
+}
+
+#input{
+    border-bottom-color: red;
+}
+
+#DrpBox{
+    padding: 2em;
+    color: black;
+}
+
+#tble{
+    margin: 1em;
+}
