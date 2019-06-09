@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<head>
+        
+        <title>Quiz </title>
+        <link rel="stylesheet" type="text/css" href="Quiz.css">
+        <script src = "Quiz.js"></script>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+</head>
+
+<body onload="hide_Quiz()">
+
+        
+        
+
+    <section class="start-section">
+
+        
+        <h2> It's Quiz Time</h2>
+        <button type="button" class="btn btn-success start" onclick=" handleStartClick()">START</button>
+    </section>
+
+   
+    <div class="container-fluid main " style="background-color:gray;">
+    <div class="row">
+    <div class="col-3" style="background-color:white;">
+        <p><input type="text" placeholder="Search for a field" class="glyphicon glyphicon-search" /></p>
+        <h3 style="color:blue;">BASIC FIELDS</h3>
+        <ul>
+            <li>Short Text</li>
+            <li>Long Text</li>
+            <li>Dropdown</li>
+            <li>Single choice</li>
+            <li>Multiple choice</li>
+            <li>File upload</li>
+            <li>Heading</li>
+            <li>HTML block</li>
+        </ul>
+        <h3 style="color:blue;">SPECIFIC FIELDS</h3>
+        <ul>
+            <li>Number</li>
+            <li>Number</li>
+        </ul>
+
+
+
+
+    </div>
+
+    <div class="col-9" style="background-color:white;">
+        <h2>Quiz</h2>
+
+        <p>Please answer the Trivia Quiz below.You will receive 2.5 points for entry<br>
+        correct answer and the looose three points for every incorect answer submitted.</p>
+         	
+	  <p class="quiz-box">
+            
+               <span class="question-count"></span>
+              <!---- <span class="score-card" style="float:right;"></span>-->
+            
+            </p>
+        <div class="quiz-section">
+                <div class="questions-form" type="A">
+                      <p></p>  
+                   <label class="options">
+                     <input  id="option-one" type="radio" name="option-one">
+                     <span></span>
+                   </label>
+                    <label class="options">
+                     <input id="option-two" type="radio" name="option-one">
+                     <span></span>
+                   </label>
+                    <label class="options">
+                     <input id="option-three" type="radio" name="option-one">
+                     <span></span>
+                   </label>
+                    <label class="options">
+                     <input id="option-four" type="radio" name="option-one">
+                     <span></span>
+                   </label>
+                   <input type="button" value="Submit Answer" class="btn btn-success" onclick="handleSubmitAnswer()">
+                </div>	
+
+                
+             </div>
+         </div>
+
+
+
+    </div>
+    <h1 class="score" style="color: white;text-align:center;"></h1>
+    <img src="C:\Users\Nitisha\Desktop\UI_Learn\QuizAssignment\images\SharmaG.jpg" class="bhaiya">
+    </div>
+ 
+    </div>
+</body>
+
+</html>
